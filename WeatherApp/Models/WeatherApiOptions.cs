@@ -8,7 +8,7 @@ public class WeatherApiOptions
 {
     public const string SectionName = "WeatherApi";
 
-    public string BaseUrl { get; set; } = "https://archive-api.open-meteo.com/";
+    public string BaseUrl { get; set; } = "";
     public double Latitude { get; set; }
     public double Longitude { get; set; }
     public string LocationName { get; set; } = string.Empty;

@@ -101,7 +101,7 @@
             const tr = document.createElement("tr");
             tr.dataset.index = String(index);
 
-            tr.appendChild(cell(record.date ?? record.rawInput));
+            tr.appendChild(dateCell(record.date ?? record.rawInput));
             tr.appendChild(cell(formatNumber(record.minTemperature)));
             tr.appendChild(cell(formatNumber(record.maxTemperature)));
             tr.appendChild(cell(formatNumber(record.precipitationSum)));
@@ -118,6 +118,15 @@
     function cell(text) {
         const td = document.createElement("td");
         td.textContent = text ?? "\u2014";
+        return td;
+    }
+
+    function dateCell(text) {
+        const td = document.createElement("td");
+        const link = document.createElement("span");
+        link.textContent = text ?? "—";
+        link.classList.add("date-link");
+        td.appendChild(link);
         return td;
     }
 

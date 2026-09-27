@@ -126,6 +126,19 @@ body {
     cursor: pointer;
 }
 
+.date-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.date-link:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
 .row-status-ok {
     color: #1c7a3d;
 }
