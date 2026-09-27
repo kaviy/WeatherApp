@@ -1,0 +1,12 @@
+@page
+@model WeatherApp.Pages.ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h2>An error occurred</h2>
+<p>Sorry, something went wrong while processing your request.</p>
+@if (Model.ShowRequestId)
+{
+    <p><strong>Request ID:</strong> <code>@Model.RequestId</code></p>
+}

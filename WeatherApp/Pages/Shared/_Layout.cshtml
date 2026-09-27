@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dallas Historical Weather</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="app-header">
+        <h1>Dallas, TX &mdash; Historical Weather</h1>
+        <p class="subtitle">Data sourced from the Open-Meteo Historical Weather API</p>
+    </header>
+
+    <main class="app-main">
+        @RenderBody()
+    </main>
+
+    <footer class="app-footer">
+        <span>Senior Software Engineer coding exercise &mdash; Razor Pages + REST API (.NET 8)</span>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

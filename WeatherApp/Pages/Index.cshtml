@@ -1,0 +1,39 @@
+@page
+@model WeatherApp.Pages.IndexModel
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<section class="controls" aria-label="Filter and status">
+    <label for="minTempFilter">
+        Show only rows with max temp &ge;
+        <input type="number" id="minTempFilter" step="0.1" placeholder="any" />
+        &deg;C
+    </label>
+    <button id="refreshButton" type="button">Refresh</button>
+    <span id="statusBadge" class="status-badge" role="status" aria-live="polite"></span>
+</section>
+
+<div id="loadingIndicator" class="loading" role="status">Loading weather data&hellip;</div>
+
+<div id="errorBanner" class="error-banner" hidden></div>
+
+<table id="weatherTable" class="weather-table" hidden>
+    <thead>
+        <tr>
+            <th data-sort-key="date" class="sortable">Date <span class="sort-arrow"></span></th>
+            <th data-sort-key="minTemperature" class="sortable">Min Temp (&deg;C) <span class="sort-arrow"></span></th>
+            <th data-sort-key="maxTemperature" class="sortable">Max Temp (&deg;C) <span class="sort-arrow"></span></th>
+            <th data-sort-key="precipitationSum" class="sortable">Precipitation (mm) <span class="sort-arrow"></span></th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="weatherTableBody">
+    </tbody>
+</table>
+
+<div id="detailPanel" class="detail-panel" hidden></div>
+
+@section Scripts {
+    <script src="~/js/weather.js"></script>
+}
