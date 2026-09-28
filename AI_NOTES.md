@@ -55,4 +55,4 @@ reasoning against the exercise's explicit example before accepting it.
 - **Configuration**: moved latitude/longitude/base URL/storage paths into `appsettings.json`
   behind `WeatherApiOptions`/`WeatherStorageOptions` POCOs instead of leaving them as inline
   constants, per the "treat config cleanly" requirement.
- -- **Add CSS Styles**: Added site.css (WeatherApp/wwwroot/css/site.css) to maintain all CSS classes in one place, referenced from _Layout.cshtml, instead of inline styles scattered across the pages.
+ - **Add CSS Styles**: Added site.css (WeatherApp/wwwroot/css/site.css) to maintain all CSS classes in one place, referenced from _Layout.cshtml, instead of inline styles scattered across the pages.
