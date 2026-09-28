@@ -2,8 +2,8 @@
 
 ## 1. Which AI tool(s) I used
 
-This solution was built with **Claude** (Anthropic), working directly from the exercise PDF in a
-single conversation: I gave Claude the exercise document and asked it to generate the full
+This solution was built with **Claude** (Anthropic),GitHub Copilot working from the exercise PDF in a
+multiple conversation: I gave Claude the exercise document steps and asked it to generate the
 solution (Razor Pages + REST API, .NET 8, SOLID principles), then reviewed and adjusted the
 generated code and file layout.
 
