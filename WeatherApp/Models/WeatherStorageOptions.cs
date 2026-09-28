@@ -7,6 +7,6 @@ public class WeatherStorageOptions
 {
     public const string SectionName = "WeatherStorage";
 
-    public string DirectoryPath { get; set; } = "weather-data";
-    public string DatesFilePath { get; set; } = "dates.txt";
+    public string? DirectoryPath { get; set; }
+    public string? DatesFilePath { get; set; }
 }
